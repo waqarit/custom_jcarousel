@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_jcarousel_skin_info(). http://timonweb.com/posts/how-to-create-custom-skin-for-jcarousel-in-drupal-7/
+ */
+function custom_jcarousel_jcarousel_skin_info() {
+  $skins = array();
+
+  $skins['myskin'] = array(
+    'title' => t('MySkin'),
+    'file' => 'skins/myskin/jcarousel-myskin.css',
+  );
+
+  return $skins;
+}
