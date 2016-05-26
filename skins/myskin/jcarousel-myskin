@@ -1,0 +1,189 @@
+/**
+ * A simple sample carousel skin.
+ *
+ * This skin includes a sample arrows.svg file that may be edited with the free
+ * illustration application InkScape (http://inkscape.org).
+ *
+ * CSS and icons by WaQaR Ali.
+ */
+
+.jcarousel-skin-myskin {
+  text-align: center;
+}
+
+.jcarousel-skin-myskin .jcarousel-container-horizontal, 
+.jcarousel-skin-myskin .jcarousel-clip-horizontal {
+    height: 397px;
+    padding: 0;
+    width: auto;
+}
+
+.jcarousel-skin-myskin .jcarousel-clip-horizontal {
+    overflow: hidden;
+}
+
+.jcarousel-skin-myskin .jcarousel-container-vertical {
+  width: 102px;
+  height: 440px;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+.jcarousel-skin-myskin .jcarousel-clip-vertical {
+  height: 440px;
+  overflow: hidden;
+}
+
+.jcarousel-skin-myskin .jcarousel-item {
+    border: 1px solid #e0e0e0;
+    height: 395px;
+    line-height: normal;
+    margin: auto 10px 0 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    position: relative;
+    width: 277px !important;
+}
+
+.jcarousel-skin-myskin .jcarousel-item:hover {
+    border-color: #4e4b4b;
+}
+
+.jcarousel-skin-myskin li.jcarousel-item-horizontal:first {
+  margin: 0;
+}
+
+.jcarousel-skin-myskin .jcarousel-item-vertical {
+  margin: 4px 0;
+}
+
+.jcarousel-skin-myskin .jcarousel-item-placeholder {
+  background: #fff url(throbber.gif) no-repeat center center;
+  color: #000;
+}
+
+/**
+ * Buttons
+ */
+.jcarousel-skin-myskin .jcarousel-next,
+.jcarousel-skin-myskin .jcarousel-prev {
+    height: 21px;
+    top: -42px;
+    width: 23px;
+    background-color: #000;
+	display:block;
+}
+
+.jcarousel-skin-myskin .jcarousel-next-disabled,
+.jcarousel-skin-myskin .jcarousel-prev-disabled {
+  display: none;
+}
+
+/**
+ * Horizontal Buttons
+ */
+.jcarousel-skin-myskin .jcarousel-prev-horizontal {
+  position: absolute;
+  left: auto;
+  right: 28px;
+  background-position: 0 0;
+}
+
+.jcarousel-skin-myskin .jcarousel-prev:before {
+    content: "\f104";
+}
+
+.jcarousel-skin-myskin .jcarousel-next:before {
+    content: "\f105";
+}
+
+.jcarousel-skin-myskin .jcarousel-next:before, 
+.jcarousel-skin-myskin .jcarousel-prev:before {
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 21px;
+    line-height: 21px;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.jcarousel-skin-myskin .jcarousel-prev-horizontal:hover,
+.jcarousel-skin-myskin .jcarousel-prev-horizontal:focus {
+  background-position: 0 -21px;
+}
+.jcarousel-skin-myskin .jcarousel-prev-horizontal:active {
+  /*background-position: -64px 0;*/
+}
+
+.jcarousel-skin-myskin .jcarousel-next:hover, 
+.jcarousel-skin-myskin .jcarousel-prev:hover, 
+.jcarousel-skin-myskin .jcarousel-next:focus, 
+.jcarousel-skin-myskin .jcarousel-prev:focus {
+    background-color: #e21a2c;
+}
+
+.jcarousel-skin-myskin .jcarousel-next-horizontal {
+  position: absolute;
+  right: 0;
+  background-position: -23px 0;
+}
+.jcarousel-skin-myskin .jcarousel-next-horizontal:hover {
+  background-position: -32px -32px;
+}
+.jcarousel-skin-myskin .jcarousel-next-horizontal:active {
+  /*background-position: -64px -32px;*/
+}
+
+/**
+ * Vertical Buttons
+ */
+.jcarousel-skin-myskin .jcarousel-prev-vertical {
+  position: absolute;
+  top: 10px;
+  left: 55px;
+  background-position: 0 -64px;
+}
+.jcarousel-skin-myskin .jcarousel-prev-vertical:hover {
+  background-position: -32px -64px;
+}
+.jcarousel-skin-myskin .jcarousel-prev-vertical:active {
+  background-position: -64px -64px;
+}
+
+.jcarousel-skin-myskin .jcarousel-next-vertical {
+  position: absolute;
+  bottom: 10px;
+  left: 55px;
+  background-position: 0 -96px;
+}
+.jcarousel-skin-myskin .jcarousel-next-vertical:hover {
+  background-position: -32px -96px;
+}
+.jcarousel-skin-myskin .jcarousel-next-vertical:active {
+  background-position: -64px -96px;
+}
+
+.jcarousel-skin-myskin .jcarousel-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel-skin-myskin .jcarousel-navigation li {
+  display: inline;
+  margin: 0 2px 0 0;
+  padding: 0;
+  background: none;
+}
+
+.jcarousel-skin-myskin .jcarousel-navigation li.active a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
